@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  At,
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
@@ -25,6 +26,11 @@ const links = [
     name: "Instagram",
     href: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
     icon: InstagramLogo,
+  },
+  {
+    name: "Threads",
+    href: process.env.NEXT_PUBLIC_THREADS_URL ?? "",
+    icon: At,
   },
   {
     name: "LinkedIn",
