@@ -6,7 +6,6 @@ import {
   LinkedinLogo,
   PaperPlaneTilt,
 } from "@phosphor-icons/react";
-import Link from "next/link";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { ICON_FONT_WEIGHT } from "@/constants/icons";
@@ -41,14 +40,14 @@ export function SocialLinks() {
         <Tooltip key={item.name}>
           <TooltipTrigger asChild>
             <Button asChild key={item.name} variant="ghost" size="icon">
-              <Link href={item.href}>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">{item.name}</span>
                 <item.icon
                   className="h-6 w-6"
                   aria-hidden="true"
                   weight={ICON_FONT_WEIGHT}
                 />
-              </Link>
+              </a>
             </Button>
           </TooltipTrigger>
           <TooltipContent>{item.name}</TooltipContent>

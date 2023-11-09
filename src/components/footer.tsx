@@ -3,19 +3,6 @@
 import { GithubLogo, InstagramLogo } from "@phosphor-icons/react";
 import { SocialLinks } from "./social-links";
 
-const links = [
-  {
-    name: "Github",
-    href: process.env.NEXT_PUBLIC_GITHUB_URL ?? "",
-    icon: GithubLogo,
-  },
-  {
-    name: "Instagram",
-    href: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
-    icon: InstagramLogo,
-  },
-];
-
 export function Footer() {
   return (
     <footer aria-labelledby="footer-heading">
