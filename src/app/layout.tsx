@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Head from "next/head";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,11 +41,13 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className={inter.className}>
-        <Header />
-        <main className="isolate">
-          <div className="pt-20">{children}</div>
-        </main>
-        <Footer />
+        <TooltipProvider>
+          <Header />
+          <main className="isolate">
+            <div className="pt-20">{children}</div>
+          </main>
+          <Footer />
+        </TooltipProvider>
       </body>
     </html>
   );
