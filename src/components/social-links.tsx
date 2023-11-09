@@ -3,6 +3,7 @@
 import {
   GithubLogo,
   InstagramLogo,
+  LinkedinLogo,
   PaperPlaneTilt,
 } from "@phosphor-icons/react";
 import Link from "next/link";
@@ -25,6 +26,11 @@ const links = [
     name: "Instagram",
     href: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
     icon: InstagramLogo,
+  },
+  {
+    name: "LinkedIn",
+    href: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "",
+    icon: LinkedinLogo,
   },
 ];
 
