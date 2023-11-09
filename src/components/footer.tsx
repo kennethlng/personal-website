@@ -1,6 +1,5 @@
 "use client";
 
-import { GithubLogo, InstagramLogo } from "@phosphor-icons/react";
 import { SocialLinks } from "./social-links";
 
 export function Footer() {
