@@ -14,7 +14,7 @@ export function Header() {
             className="-m-1.5 p-1.5 font-bold text-2xl flex items-center"
           >
             <Image
-              src="/memoji_clouds.png"
+              src="/memoji_clouds.PNG"
               alt="kennethlng"
               width={28}
               height={28}

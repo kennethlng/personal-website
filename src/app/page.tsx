@@ -7,7 +7,7 @@ export default function Home() {
       <div className="absolute right-0 bottom-0 m-10">
         <div className="flex items-end space-x-2">
           <p className="font-bold text-lg">I&apos;m still working on this...</p>
-          <Image src="/memoji_clouds.png" alt="" width={100} height={100} />
+          <Image src="/memoji_clouds.PNG" alt="" width={100} height={100} />
         </div>
       </div>
     </AspectRatio>
